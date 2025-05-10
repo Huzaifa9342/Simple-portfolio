@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    font-family: Arial;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav_logo {
+    height: 75px;
+    width: 85px;
+    background-image: url("logo.jfif");
+}
+
+.nav_logo img {
+    height: 75px;
+    width: 85px;
+}
+
+.sapace {
+    width: 150px;
+    margin-left: 200px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 20px;
+}
+
+
+
+/*________________HIDER DIV_______________ */
+.hider {
+    height: 80px;
+}
+
+
+
+
+/*________________Mian Image_______________ */
+
+.main_image {
+    height: 460px;
+    background-image: url("huhu.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ormis {
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.ormis p {
+    color: white;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.mission {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+
+/*________________Pati_______________ */
+
+.pati {
+    height: 20px;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pati pre {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+/*________________Owner Section_______________ */
+
+.owner_sec {
+    height: 300px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+}
+
+.comp_name {
+    height: 280px;
+    margin-left: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.comp_name pre {
+    margin-top: 50px;
+    margin-right: 40px;
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.own_image {
+    margin-left: 40px;
+    margin-right: 100px;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 69);
+
+}
+
+.own_image img {
+    border-radius: 50%;
+}
+
+.own_amin {
+    position: relative;
+    animation-name: owner_image;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes owner_image {
+    from {
+        height: 280px;
+        width: 280px;
+    }
+    to {
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+
+
+
+
+
+/*________________SERVICES_______________ */
+
+
+.services {
+    height: 400px;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ser_title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(12, 12, 69);
+    height: 40px;
+}
+
+.ser_title pre {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Container styling */
+.services {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: flex-start; /* Start aligning items to the left */
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Prevent overflow while images are moving */
+}
+
+/*
+.services img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 1s ease-in-out;
+    opacity: 0; 
+}*/
+
+/* Individual delays and animation */
+/*.services img:nth-child(1) {
+    animation: moveToLeft 2s forwards ease-in-out;
+    animation-delay: 0s;
+    opacity: 1;
+}
+
+.services img:nth-child(2) {
+    animation: moveToLeft 2s forwards ease-in-out;
+    animation-delay: 2s;
+    opacity: 1;
+}
+
+.services img:nth-child(3) {
+    animation: moveToLeft 2s forwards ease-in-out;
+    animation-delay: 4s;
+    opacity: 1;
+}
+
+.services img:nth-child(4) {
+    animation: moveToLeft 2s forwards ease-in-out;
+    animation-delay: 6s;
+    opacity: 1;
+}*/
+
+/* Animation keyframes */
+/*@keyframes moveToLeft {
+    0% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: 0;
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}*/
+
+
+
+
+
+/*________________Thumbnails_______________ */
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(56, 54, 54);
+}
+
+.thumb_title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(12, 12, 69);
+    height: 40px;
+}
+
+.thumb_view {
+    height: 38px;
+    width: 100px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+.thumb_view :hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+.thumb_title p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.thumb_pic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(56, 54, 54);
+}
+
+.thumb_1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+
+
+.thumb_2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+.thumb_3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+.thumb_4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+
+
+/*________________Owner Section_______________ */
+
+.owner_sec {
+    height: 300px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+}
+
+.comp_name {
+    height: 280px;
+    margin-left: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.comp_name pre {
+    margin-top: 50px;
+    margin-right: 40px;
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.own_image {
+    margin-left: 40px;
+    margin-right: 100px;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 69);
+    background-image: url("hafiz.jfif");
+}
+
+
+/*________________SOCIAL MEDIA POSTS_______________ */
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(56, 54, 54);
+}
+
+.media_title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(12, 12, 69);
+    height: 40px;
+}
+
+.media_view {
+    height: 38px;
+    width: 100px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+.media_view :hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+.media_title p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.media_pic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(56, 54, 54);
+}
+
+.media_1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+
+
+.media_2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+.media_3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+.media_4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+    padding: 0;
+
+}
+
+
+
+
+
+/*________________CONTACT________________ */
+
+
+.contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.con_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.con_title p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.con_number {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.phone {
+    height: 30px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+}
+
+.phone pre {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.phone i {
+    font-size: 2rem;
+}
+
+.email {
+    height: 30px;
+    width: 510px;
+    display: flex;
+    align-items: center;
+}
+
+.email pre {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.email i {
+    font-size: 2rem;
+}
+
+.con_icons {
+    height: 70px;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.con_icons i {
+    color: black;
+    font-size: 40px;
+}
+
+.facebook {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiktok {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
